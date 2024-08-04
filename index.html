@@ -45,7 +45,7 @@
         </svg>
       </button>
       </div>
-      <div class="mobile-menu is-open">
+      <div class="mobile-menu">
         <div class="container mobile-menu-container">
 <button class="mobile-menu-close" data-menu-close>
 <svg width="24" height="24"> <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use></svg>
@@ -103,14 +103,14 @@
       </div>
     </header> 
      
-    <!-- <main> 
+     <main> 
 <section class="hero">
-     <div class="container">
+     <div class="container hero">
      <h1 class="hero-title">Effective Solutions for Your Business</h1> 
       <button type="button" class="hero-btn">Order Service</button></div> </section>
       <section class="benefits">
-        <div class="container"> -->
-<!-- <h2 class="visually-hidden">Benefits</h2>
+        <div class="container benefit "> 
+ <h2 class="visually-hidden">Benefits</h2>
 <ul class="benefits-list"> 
     <li class="benefits-list-item"> <div class="benefits-icon"><svg width="64" height="64">
 <use href="./images/icons.svg#icon-antenna-1"></use>
@@ -149,9 +149,9 @@
     </li> 
 </ul>
 </div>
-</section> -->
-<!-- <section class="ourteam"> 
-    <div class="container">
+</section> 
+ <section class="ourteam "> 
+    <div class="container ourteams">
     <h2 class="ourteam-title">Our Team</h2>
 <ul class="ourteam-list"> 
     <li class="ourteam-list-item"> 
@@ -308,7 +308,13 @@
        <h2 class="ourportfolio-title">Our Portfolio</h2> 
        <ul class="ourportfolio-list">
         <li class="ourportfolio-list-item">
-            <div class="ourportfolio-container-img"><img src="./images/our-portfolio1.jpg" alt="Banking App" width="360" height="300" class="ourportfolio-list-item-img"> 
+            <div class="ourportfolio-container-img">
+              <picture>
+                <source srcset="./images/portfolio-mobile-1, ./images/portfolio-mobile-1 2px" media="min-width:1200px">
+                <source srcset="" media="min-width:768px">
+                <source srcset="" media="max-width:767px">
+              <img src="./images/our-portfolio1.jpg" alt="Banking App" width="360" height="300" class="ourportfolio-list-item-img"> 
+              </picture>
             <p class="ourportfolio-container-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
 
             </p>
@@ -425,7 +431,7 @@
 
 
 
-<div class="modal is-open" data-modal>
+<!-- <div class="modal is-open" data-modal>
 <div class="modal-window">
 <button type="button" class="modal-window-button is-open" data-modal-close>
   <svg width="8" height="8" class="modal-window-svg">
@@ -476,18 +482,18 @@ Leave your contacts and we will call you back
 
   <label for="user-privacy" class="modal-check">
     <span class="modal-check-container">
-      <svg width="10" height="8" class="modal-check-svg">
+      <svg width="16" height="16" class="modal-check-svg">
         <use href="./images/icons.svg#icon-Vector-1"></use>
       </svg>
     </span>
-    I accept the terms and conditions of the 
-    <a href="" class="check-link">Privacy Policy</a>
+    <span class="modal-accept">I accept the terms and conditions of the 
+    <a href="" class="check-link">Privacy Policy</a></span>
   </label>
 </div>
 <button class="form-btn" type="submit">Send</button>
 </form>
 </div>
 </div>
-<script src="./js/modal.js"></script> -->
+<script src="./js/modal.js"></script>  -->
 </body>  
-</html>
+</html> 
